@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    background-color: rgb(44, 44, 44);
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column;
+  }
+  #line{
+    color: black;
+    border-radius: 5px;
+    width: max-content;
+  }
+  #app-name{
+    display: flex; 
+    background-color: inherit;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    padding: 10px 20px;
+    z-index: 10;
+    overflow: hidden;
+  }
+  h1{
+    color: inherit;
+    border-radius: solid black 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+  }
+  
+  #tasks {
+    background-color: transparent;
+    padding: 20px;
+    margin: 1.5em;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    max-width: 500px; 
+    position: fixed;
+    top: 20%;
+    gap: 5px;
+    position: absolute;
+  }
+  
+  .task-item {
+    display: flex; 
+    align-items: center; 
+    width: 250px; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+  }
+  
+  .task {
+    flex: 1; 
+    outline: none; 
+    background-color: transparent; 
+    font-size: 16px; 
+    color: inherit; 
+    padding: 5px; 
+    overflow: auto;
+    max-width: 450px;
+  }
+  #task-item[contenteditable="true"]:focus {
+    outline: none;
+    box-shadow: none; 
+  }
+  .check {
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(44, 44, 44, 0.8);
+    border: none;
+  }
+  
+  #add {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(44, 44, 44, 0.8);
+    border: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    margin-top: 1.5em; 
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+  }
+  .task-item--completed{
+    opacity: 0.2;
+  }
+  #add:active {
+    opacity: 0.7; 
+  }
+
+  .delete{
+    color: white;
+    width: 6px;
+    height: 6px;
+    text-align: center;
+    border: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(44, 44, 44, 0.8);
+    border: none;
+  }
