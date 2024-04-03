@@ -43,7 +43,7 @@ body {
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap; 
-    max-width: 500px; 
+    max-width: 600px; 
     position: fixed;
     top: 20%;
     gap: 5px;
@@ -53,7 +53,7 @@ body {
   .task-item {
     display: flex; 
     align-items: center; 
-    width: 250px; 
+    width: 300px; 
     margin-bottom: 10px; 
     padding: 10px; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
@@ -67,7 +67,7 @@ body {
     color: inherit; 
     padding: 5px; 
     overflow: auto;
-    max-width: 450px;
+    max-width: 500px;
   }
   #task-item[contenteditable="true"]:focus {
     outline: none;
@@ -75,15 +75,19 @@ body {
   }
   .check {
     margin-right: 10px;
+    width: 30px;
+    height: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(44, 44, 44, 0.8);
     border: none;
   }
   
   #add {
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(44, 44, 44, 0.8);
     border: 5px;
@@ -95,23 +99,27 @@ body {
     position: fixed;
     bottom: 10%;
     right: 10%;
+    overflow: hidden;
   }
   .task-item--completed{
-    opacity: 0.2;
+    opacity: 0.3;
   }
   #add:active {
     opacity: 0.7; 
   }
 
   .delete{
-    color: white;
-    width: 6px;
-    height: 6px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border: 5px;
-    cursor: pointer;
-    margin-right: 10px;
+    width: 60px;
+    height: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(44, 44, 44, 0.8);
-    border: none;
+    border: 5px;
+    border-radius: 2%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
   }
